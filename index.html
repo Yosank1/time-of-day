@@ -62,23 +62,27 @@
     <main>
 	 <header><h3>A JavaScript Example by Yosan Kiflemariam</h3></header>
 		<p>Create a web page that uses JavaScript to determine the current hour, 
-@@ -72,15 +73,49 @@ <h1 class="masthead">Time of Day</h1>
+			and presents a different image, custom message, and color based 
+			on each of the following times of day </p>
+
+		<p>
+			<ul>
+				<li>Morning (5am to 12 noon)</li>
+				<li>Afternoon (12 noon to 6pm)</li>
+				<li>Evening (6pm to 11pm)</li>
 				<li>Night (11pm to 5am)</li>
 			</ul>
 
 
 		</p>
-	  <img src="http://dummyimage.com/300x400" alt="Picture of Me!" class="flexible" />
 	  <img id="pic" src="http://dummyimage.com/300x400" alt="Picture of Me!" class="flexible" />
      </main>
     <footer>
-      <small>&copy; 2013, All Rights Reserved ~
       <small>&copy; 2020 - <span id="copyright">copyright goes here</span>, All Rights Reserved ~
       <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~
       <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
       </small>
     </footer>
-    <!-- END Footer -->
 	<script>
 		let myDate = new Date();
 
@@ -94,7 +98,7 @@
 
 		if(myHour <12){
       		myText = "Good Morning!";
-			myColor = "red";
+			myColor = "yellow";
 			myPic = "images/morning.jpg";
 		}else{
       		myText = "Good Afternoon!";
