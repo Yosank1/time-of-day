@@ -55,13 +55,26 @@
      <![endif]-->
 </head>
 <body>
+<<<<<<< HEAD
 	<header>
+=======
+		<header>
+>>>>>>> c8ff698b028ff892e08b453861c4f7e10da11ee8
 		<h1 class="masthead">Time of Day</h1>
 	</header>
 	<h2 id="greeting">Greeting Goes Here!</h2>
     <main>
 	 <header><h3>A JavaScript Example by Yosan Kiflemariam</h3></header>
+<<<<<<< HEAD
 		<p>Create a web page that uses JavaScript to determine the current hour<h1 class="masthead">Time of Day</h1>
+=======
+		<p>Create a web page that uses JavaScript to determine the current hour, 
+			and presents a different image, custom message, and color based 
+			on each of the following times of day </p>
+
+		<p>
+			<ul>
+>>>>>>> c8ff698b028ff892e08b453861c4f7e10da11ee8
 				<li>Morning (5am to 12 noon)</li>
 				<li>Afternoon (12 noon to 6pm)</li>
 				<li>Evening (6pm to 11pm)</li>
@@ -73,13 +86,19 @@
 	  <img id="pic" src="http://dummyimage.com/300x400" alt="Picture of Me!" class="flexible" />
      </main>
     <footer>
+<<<<<<< HEAD
       <small>&copy; 2013, All Rights Reserved ~
+=======
+>>>>>>> c8ff698b028ff892e08b453861c4f7e10da11ee8
       <small>&copy; 2020 - <span id="copyright">copyright goes here</span>, All Rights Reserved ~
       <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~
       <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
       </small>
     </footer>
+<<<<<<< HEAD
     <!-- END Footer -->
+=======
+>>>>>>> c8ff698b028ff892e08b453861c4f7e10da11ee8
 	<script>
 		let myDate = new Date();
 
@@ -88,6 +107,7 @@
 		let myPic = "";
 
 
+<<<<<<< HEAD
 		
 		let myHour = myDate.getHours();
 
@@ -107,7 +127,7 @@
 			myPic = "images/afternoon.jpg";
 
 		} else if(myHour >= 18 && myHour < 23){
-			myText = "Good Evening!";
+			myText = "Good Egitvening!";
 			myColor = "blue";
 			myPic = "images/evening.jpg";
 		
@@ -117,6 +137,21 @@
       		myText = "Good Night!";
 			myColor = "black";
 			myPic = "images/night.jpg";
+=======
+		let myHour = myDate.getHours();
+
+		//LINE BELOW FOR TESTING - REMOVE BEFORE PLACING IN SERVICE
+		myHour = 13;
+
+		if(myHour <12){
+      		myText = "Good Morning!";
+			myColor = "yellow";
+			myPic = "images/morning.jpg";
+		}else{
+      		myText = "Good Afternoon!";
+			myColor = "purple";
+			myPic = "images/afternoon.jpg";
+>>>>>>> c8ff698b028ff892e08b453861c4f7e10da11ee8
 		}
 
 		//console.log(myText);
